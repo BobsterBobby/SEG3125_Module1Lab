@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Facebook UI Survey</title> 
+		<style type = "text/css">
+			body{
+				background-image: url("WebpageBackground.jpg");
+				background-repeat: no-repeat;
+				background-size: 2000px 1000px;
+			}
+			.likert li {
+				float: left;
+				list-style-type: none;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<p style = "font-size:30px">What do think of the 
+		<a href="https://www.facebook.com/">Facebook</a>'s user interface?
+		</p>
+		
+		<a href="https://www.facebook.com/">
+			<img src="fonctionnalites-facebook.png" height="84" width="140"/>
+		</a>
+		
+		<br>
+		
+		<form>
+			
+			<p><label><strong>Name:</strong>
+				<input name = "name" type = "text" autocomplete = "on" size = "25">
+			</label></p>
+			<p><label><strong>Email:</strong>
+				<input name = "email" type = "text" autocomplete = "on" size = "25">
+			</label></p>
+			
+			
+			<p>
+				<label for="birthday">
+					<strong>When is your date of birth?</strong>
+				</label>
+				<input type="date" id="birthday" name="birthday">
+			</p>
+			
+			<strong>What is your gender?</strong>
+			<p>
+				<label>
+					<input name = "Gender" type = "radio" value = "Male">Male
+				</label>
+				<label>
+					<input name = "Gender" type = "radio" value = "Female">Female
+				</label>
+				<label>
+					<input name = "Gender" type = "radio" value = "Other">Other
+				</label>
+			</p>
+			
+			<strong>How long have you been using Facebook?</strong>
+			<p>
+				<label>
+					<select name = "Year">
+						<option selected>First time using</option>
+						<option>around a month or less</option>
+						<option>a few months, less than a year</option>
+						<option>around a year</option>
+						<option>more than one year</option>
+					</select>
+				</label>
+			</p>
+			
+			<strong>What part of Facebook UI do you like the most?</strong>
+			<p>				
+				<label>
+					<input name = "choise" type = "checkbox" value = "functions">
+					Everything functions properly
+				</label></br>
+				<label>
+					<input name = "choise" type = "checkbox" value = "notifications">
+					Visible notifications
+				</label></br>
+				<label>
+					<input name = "choise" type = "checkbox" value = "pop-up">
+					News pop-up
+				</label></br>
+				<label>
+					<input name = "choise" type = "checkbox" value = "accessibility">
+					Easy to access
+				</label></br>
+				<label>
+					<input name = "choise" type = "checkbox" value = "Other">
+					Other
+				</label></br>
+			</p>
+			
+			<br>
+			
+			<strong>How much would you like to rate you Facebook UI experience?</strong>
+			<p>
+				<ul class="likert">
+				<li> 1 star </li>
+				<li><input type="radio" name="guilty" value="1" /></li>
+				<li><input type="radio" name="guilty" value="2" /></li>
+				<li><input type="radio" name="guilty" value="3" /></li>
+				<li><input type="radio" name="guilty" value="4" /></li>
+				<li><input type="radio" name="guilty" value="5" /></li>
+				<li> 5 stars </li>
+			</ul>
+			</p>
+			
+			<br>
+			
+			<p><label><strong>Extra Comments:</strong><br>
+				<textarea name = "Comments" rows = "4" cols = "36">Enter Comments here.</textarea>
+			</p></label>
+			
+			
+			<br>
+			
+			<p>
+				<input type = "submit" value = "Submit">
+				<input type = "reset" value = "Reset">
+			</p>
+			
+			<footer>By: Robert Zhang (300077171)</footer>
+		</form>
+	</body>
+</html>
