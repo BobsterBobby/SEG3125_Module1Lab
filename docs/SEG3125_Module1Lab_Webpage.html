@@ -3,34 +3,37 @@
 <html lang="en">
 	<head>
 		<meta charset = "utf-8">
-		<title>Facebook UI Survey</title> 
+		<title>Facebook UI Survey</title>
+		<link href="SEG3125_Module1Lab_Webpage.css" rel="stylesheet">
 		<style type = "text/css">
 			body{
 				background-image: url("WebpageBackground.jpg");
 				background-repeat: no-repeat;
-				background-size: 2000px 1000px;
+				background-size: 100% 100%;
 			}
 			.likert li {
 				float: left;
 				list-style-type: none;
 			}
-			
 		</style>
 	</head>
 	
 	<body>
-		<p style = "font-size:30px">What do think of the 
-		<a href="https://www.facebook.com/">Facebook</a>'s user interface?
-		</p>
-		
-		<a href="https://www.facebook.com/">
-			<img src="fonctionnalites-facebook.png" height="84" width="140"/>
-		</a>
+		<div class = "Div1">
+			<h1><p>What do think of the 
+			<a href="https://www.facebook.com/">Facebook</a>'s user interface?
+			</p></h1>
+			
+			<a href="https://www.facebook.com/">
+				<img src="fonctionnalites-facebook.png"/>
+			</a>
+		</div>
 		
 		<br>
 		
+		<div class = "Div3">
 		<form>
-			
+			<div class = "Div2">
 			<p><label><strong>Name:</strong>
 				<input name = "name" type = "text" autocomplete = "on" size = "25">
 			</label></p>
@@ -125,7 +128,12 @@
 				<input type = "reset" value = "Reset">
 			</p>
 			
-			<footer>By: Robert Zhang (300077171)</footer>
+			<h2><footer>
+				Website designed by Robert Zhang (300077171)
+			</footer></h2>
+			
+			</div>
 		</form>
+		</div>
 	</body>
 </html>
